@@ -23,8 +23,12 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTableModule } from "@angular/material/table";
+
+//Componentes do projeto
+import { NavComponent } from "./components/nav/nav.component";
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -45,8 +49,7 @@ import { MatTableModule } from "@angular/material/table";
     MatSnackBarModule,
     MatPaginatorModule,
     MatFormFieldModule,
-    MatTableModule
-
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
